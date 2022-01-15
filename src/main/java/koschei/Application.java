@@ -10,8 +10,8 @@ import quoter.TerminatorQuoter;
 public class Application {
     public static void main(String[] args) throws InterruptedException {
         ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("context.xml");
-        while (true) {
-            Thread.sleep(1000);
+//        while (true) {
+//            Thread.sleep(1000);
             // не станет теперь работать поскольку здесь теперь прокси
             // applicationContext.getBean(TerminatorQuoter.class).sayQuote();
             // делаем точку останова
@@ -23,7 +23,7 @@ public class Application {
             // applicationContext.getBean(Quoter.class).getClass()
             // и видим имя jdk.proxy2.$Proxy8
             // делаем так же как в профилировании
-            applicationContext.getBean(Quoter.class).sayQuote();
-        }
+//            applicationContext.getBean(Quoter.class).sayQuote();
+//        }
     }
 }
