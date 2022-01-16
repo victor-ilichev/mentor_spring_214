@@ -23,7 +23,7 @@ public class Application {
             // applicationContext.getBean(Quoter.class).getClass()
             // и видим имя jdk.proxy2.$Proxy8
             // делаем так же как в профилировании
-//            applicationContext.getBean(Quoter.class).sayQuote();
+            applicationContext.getBean(Quoter.class).sayQuote();
 //        }
     }
 }
